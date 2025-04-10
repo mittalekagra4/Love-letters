@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Love Letters</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe6f7);
+      color: #4b306a;
+      overflow-x: hidden;
+    }
+
+    .sparkle {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/stardust.png');
+      opacity: 0.25;
+      animation: sparkle 20s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes sparkle {
+      0% { background-position: 0 0; }
+      100% { background-position: 1000px 1000px; }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      font-family: 'Caveat', cursive;
+      text-align: center;
+      color: #c445a9;
+      font-size: 3rem;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px #ffd9f5;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: #f7b3da;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-family: 'Quicksand', sans-serif;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #e675c6;
+      transform: scale(1.02);
+    }
+
+    .message {
+      background-color: #fff0fb;
+      border: 2px dashed #f3b7e0;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ffc8ec;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      white-space: pre-line;
+    }
+
+    .message.show {
+      display: block;
+      opacity: 1;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .from {
+      margin-top: 15px;
+      text-align: right;
+      font-family: 'Caveat', cursive;
+      font-size: 1.2rem;
+      color: #d24ca3;
+    }
+
+    @keyframes fadeIn {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sparkle"></div>
+  <div class="container">
+    <h1>Love Letters for the Prettiest Girl</h1>
+
+    <button onclick="toggleMessage(0)">Open when... you miss me</button>
+    <div class="message">
+      Helloww mi amor...
+      If you’re reading this, it means you might be missing me and I want you to know that I feel it too...
+      infact I miss you more than you do.... and here's a virtual warm hug through this message for u sweetiee....
+      could you like close eyes for a second.... and imagine me holding your hand.... gently brushing your hair back....
+      and slowly whispering "you're soo important for me pariii"
+      We may not be together at this moment..... but baby I’m always in your heart... in your thoughts....
+      You can anytime come back to this whenever you miss me… this message is just a click away.
+      <div class="from">From Ekagra</div>
+    </div>
+
+    <button onclick="toggleMessage(1)">Open when... you're overthinking</button>
+    <div class="message">
+      Hellow sweetie...
+      Plijjj calm down.... I know that mind of yours is for sure running in a thousand directions right now.....
+      It's completely normal baby... even I'm a big overthinker, maybe I'm a bigger overthinker than you...
+      But trust me, our life is in the hands of God and he always has better plans for us....
+      Soooo you know what? I trust you and I believe in you....
+      And I want you to believe in yourself too.....
+      And trust meeee you're doing enough.....
+      You’re stronger than you think.... and no matter what’s on your mind, you’ve got meee alwaysss...
+      <div class="from">From Ekagra</div>
+    </div>
+
+    <button onclick="toggleMessage(2)">Open when... you feel lonely</button>
+    <div class="message">
+      Hey love,
+      I know you’re feeling lonely right now and I want you to know that you’re not alone....
+      Even if there’s no one physically around you, my heart would always be right there beside yours...
+      Sometimes it happens with us even when we’re surrounded by people....
+      but I hope you can feel my arms wrapping you (best place for me fr)
+      U can alwayyss talk to me... I'm just a text or a call away...
+      You’re never alone, baby.... you’ve got me in spirit, in soul, and literally in every of my heartbeat...
+      <div class="from">From Ekagra</div>
+    </div>
+
+    <button onclick="toggleMessage(3)">Open when... you want to smile</button>
+    <div class="message">
+      Helloow sweetheart...
+      You wanna smile..? Oh well I'm so fcking excited hehe
+      That smile babe.... I just love that smile because u look soo soo soo sundar and adorable when u smile....
+      that smile of yours could literally fix my worst day.
+      Now, do me a favor plijjj and smile right now... just a tiny one...?
+      See? You look even more adorable now heheh
+      Keep smiling baby you're the prettiest girl in the world.
+      <div class="from">From Ekagra</div>
+    </div>
+
+    <button onclick="toggleMessage(4)">Open when... you wanna feel loved</button>
+    <div class="message">
+      Helloooww prettiest,
+      This one's my fav actually heheh
+      Sooo is it u feeling deprived of lovee..?
+      Like... I genuinely don't think you realise how important you are to me.
+      You're literally my comfort person, my feel gud hormone and much more...
+      you're one person whose face I'd love to see after a long day....
+      I love the way you talk, i love the way u smile, i love the way u laugh,
+      i love the way u overthink random things for no reason lol...
+      and I love us being us and being silly for no reason...
+      Sooo u seee..... I'm always there for youuu......
+      if you're feeling unloved, just erase that thought off your mind....
+      I love u more than u think.... okieee sweatieee?
+      Now I want u to do me a favor.... do something that u lovee doing and
+      so that youu smile.... yeaaa that's me again who wants u to pass that
+      beautiful pretty lovely jubbly smile hehe
+      <div class="from">From Ekagra</div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMessage(index) {
+      const messages = document.querySelectorAll(".message");
+      messages.forEach((msg, i) => {
+        if (i === index) {
+          msg.classList.toggle("show");
+        } else {
+          msg.classList.remove("show");
+        }
+      });
+    }
+  </script>
+</body>
+</html>
